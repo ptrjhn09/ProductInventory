@@ -1,0 +1,81 @@
+.sidebar {
+  background-color: rgb(20, 38, 63);
+  color: white;
+  width: 10%;
+  min-height: 100vh;
+  padding: 20px;
+  border-radius: 7px;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+
+  span {
+    display: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+  }
+
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  button {
+    margin-top: auto;
+
+    height: 35px;
+    background-color: rgb(22, 119, 234);
+    color: white;
+    border: none;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(22, 100, 196);
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 15%;
+
+    p {
+      justify-content: flex-start;
+      gap: 10px;
+    }
+
+    span {
+      display: inline;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+
+
+  @media (min-width: 1024px) {
+    button {
+      width: 90%;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    button {
+      width: 80%;
+    }
+  }
+}

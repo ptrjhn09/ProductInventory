@@ -1,0 +1,126 @@
+.form {
+  border: none;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 7px;
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+
+  .icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .header-form {
+    display: grid;
+    text-align: center;
+
+    h1 {
+      font-family: "Poppins", sans-serif;
+      font-size: 24px;
+    }
+    span {
+      font-size: 13px;
+      color: grey;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+
+  .content {
+    display: grid;
+    gap: 5px;
+    padding: 10px;
+
+    select {
+      height: 28px;
+      width: 90%;
+      border: 1px solid;
+      border-radius: 5px;
+    }
+
+    .Stock {
+      height: 25px;
+      width: 90%;
+      border: 1px solid;
+      border-radius: 5px;
+    }
+
+    .Price {
+      height: 25px;
+      width: 90%;
+      border: 1px solid;
+      border-radius: 5px;
+    }
+
+    .product {
+      height: 25px;
+      width: 90%;
+      border: 1px solid;
+      border-radius: 5px;
+    }
+
+    p {
+      font-size: 15px;
+      color: #27292c;
+      font-family: "Poppins", sans-serif;
+    }
+    .description {
+      width: 90%;
+      height: 40px;
+    }
+
+    .file-upload{
+      height: 25px;
+      width: 90%;
+      border: 1px solid;
+      border-radius: 5px;
+
+      p {
+        margin: 0;
+        font-size: 14px;
+        color: #64748b;
+      }
+    }
+    
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+
+      .save-button {
+        height: 35px;
+        width: 130px;
+        background-color: rgba(22, 119, 234);
+        color: white;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+      }
+
+      .cancel-button {
+        height: 35px;
+        width: 100px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.search-container {
+  position: relative;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  transform: translateX(70%);
+  top: 217px;
+  color: #6b7280;
+  font-size: 18px;
+}
+
+.searchBar {
+  width: 300px;
+  padding: 12px 12px 12px 40px;
+  border: 2px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 14px;
+}

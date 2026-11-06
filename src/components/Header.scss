@@ -1,0 +1,40 @@
+.header {
+//   border: red solid;
+  height: 50px;
+  width: 100%;
+  padding:10px;
+  box-shadow: 2px 2px 3px;
+  border-radius: 3px;
+
+  .container {
+    display: flex;
+    justify-content: space-between; // left and right
+    align-items: center; // vertical alignment
+    height: 100%;
+    width: 100%;
+  }
+
+  h5 {
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: rgb(16, 20, 28);
+    margin: 0;
+  }
+
+  button {
+    height: 30px;
+    border: none;
+    background-color: rgba(36, 102, 234);
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+
+    &:hover{
+      background-color: rgb(14, 61, 155);
+    }
+  }
+}

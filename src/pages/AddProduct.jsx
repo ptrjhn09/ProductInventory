@@ -83,6 +83,7 @@ function AddProduct() {
       setLoading(true);
       console.log("button clicked");
       const url = `${import.meta.env.VITE_API_PRODUCT}/${productId}`;
+      
       const formData = new FormData();
       formData.set("ProductName", productName);
 

@@ -1,0 +1,108 @@
+.orderBooking-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .product-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+    // border: red solid;
+  }
+
+  .product-card {
+    box-shadow: 1px 1px 3px black;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    height: 340px;
+    flex-direction: column;
+    // border: red solid;
+
+    .categorys {
+      font-size: 14px;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+    }
+
+    .prodImage {
+      height: 140px;
+      width: 100%;
+      // border: red solid;
+      object-fit: contain;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .img {
+      border-radius: 10px;
+    }
+
+    .prices {
+      font-family: "Inter", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: #2563eb;
+    }
+    h2 {
+      margin: 0;
+      font-size: 18px;
+      color: #1f2937;
+      font-family: "Poppins medium", sans-serif;
+    }
+
+    p {
+      font-size: 14px;
+      color: #27292c;
+      font-family: "Poppins", sans-serif;
+      font: inter regular;
+    }
+
+
+
+    .actions-order {
+      display: flex;
+      margin-top: auto;
+      justify-content: space-around;
+    }
+
+    button {
+      border: none;
+      color: white;
+      padding: 10px;
+      border-radius: 6px;
+      width: 100%;
+      background: #2563eb;
+      cursor: pointer;
+
+      display: flex;
+      text-align: center;
+      justify-content: center;
+
+    }
+
+    .edit-btn {
+      background: #2563eb;
+    }
+
+    .delete-btn {
+      background: #ef4444;
+    }
+
+    .view-btn {
+      background: #2563eb;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .stats-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product-box {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  }
+}

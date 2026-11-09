@@ -4,6 +4,8 @@ import { MdDashboard } from "react-icons/md";
 import { MdOutlineProductionQuantityLimits } from "react-icons/md";
 import { useNavigate } from 'react-router-dom';
 import { CiLogout } from "react-icons/ci";
+import { BsCart4 } from "react-icons/bs";
+
 
 import "./Sidebar.scss";
 
@@ -25,9 +27,15 @@ const navigate = useNavigate();
       <span>Dashboard</span>
      </p>
 
-     <p>
+     <p onClick={() => navigate("/HomePage")}>
       <MdOutlineProductionQuantityLimits/>
       <span>Products</span>
+     </p>
+
+     <p onClick={() => navigate("/order-booking")}>
+    <BsCart4 />
+
+      <span>Order Booking</span>
      </p>
 
      <button onClick={logout}><CiLogout/><span>Log out</span></button>

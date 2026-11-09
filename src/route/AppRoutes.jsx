@@ -8,6 +8,8 @@ import ResetPassword from "../pages/ResetPassword";
 import ProtectResetPassword from "./ProtectResetPassword";
 import AddProduct from "../pages/AddProduct";
 import ViewProduct from "../pages/ViewProduct";
+import OrderBooking from "../pages/OrderBooking";
+import BookOrder from "../pages/Book-Order";
 
 function AppRoutes() {
   return (
@@ -17,6 +19,11 @@ function AppRoutes() {
       <Route path="/forgot" element={<Forgot />} />
       <Route path="/add-product" element={<AddProduct/>}/>
       <Route path ="/view-product" element={<ViewProduct/>}/>
+      <Route path ="/order-booking" element={<OrderBooking/>}/>
+      <Route path = "/book-order" element ={<BookOrder />}/>
+      
+      
+
 
 
 

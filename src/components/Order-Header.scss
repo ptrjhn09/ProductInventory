@@ -1,0 +1,24 @@
+.orderBooking-header {
+//   border: red solid;
+  height: 50px;
+  width: 100%;
+  padding:10px;
+  box-shadow: 2px 2px 3px;
+  border-radius: 3px;
+
+  .orderBooking-container {
+    display: flex;
+    justify-content: space-between; // left and right
+    align-items: center; // vertical alignment
+    height: 100%;
+    width: 100%;
+  }
+
+  h5 {
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: rgb(16, 20, 28);
+    margin: 0;
+  }
+}

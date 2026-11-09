@@ -7,7 +7,7 @@ import "./Homepage.scss";
 
 function HomePage() {
 
-    const [products, setProducts] = useState([]);
+  
     return (
         <div className="homepage">
 
@@ -15,7 +15,7 @@ function HomePage() {
 
             <div className="content">
                 <Header />
-                <Body products={products}/>
+                <Body/>
             </div>
 
         </div>

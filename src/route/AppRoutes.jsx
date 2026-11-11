@@ -10,6 +10,7 @@ import AddProduct from "../pages/AddProduct";
 import ViewProduct from "../pages/ViewProduct";
 import OrderBooking from "../pages/OrderBooking";
 import BookOrder from "../pages/Book-Order";
+import ListOrder from "../pages/ListOrders";
 
 function AppRoutes() {
   return (
@@ -21,6 +22,7 @@ function AppRoutes() {
       <Route path ="/view-product" element={<ViewProduct/>}/>
       <Route path ="/order-booking" element={<OrderBooking/>}/>
       <Route path = "/book-order" element ={<BookOrder />}/>
+      <Route path ="/list-order" element ={<ListOrder/>}/>
       
       
 

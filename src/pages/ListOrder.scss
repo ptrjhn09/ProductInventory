@@ -1,0 +1,11 @@
+.listOrderPage{
+    display: flex;
+    gap: 10px;
+
+    .listOrderContent{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+}
+

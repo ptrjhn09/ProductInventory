@@ -8,16 +8,20 @@ function OrderBody() {
 
   const [product, setProduct] = useState([]);
   const navigate = useNavigate();
+
+
   useEffect(() => {
-    console.log("component lOad");
+    console.log("component load");
     getProduct();
   }, []);
 
  
-    const btnOrder = () => {
-    navigate("/book-order", {state: product, });
+    const btnOrder = (selectedProduct) => {
+    navigate("/book-order", {state: selectedProduct, }
 
-  }
+    );
+
+  };
 
 
   const getProduct = async () => {
@@ -50,7 +54,7 @@ function OrderBody() {
             <p className="prices">₱{product.price}</p>
             <p>{product.stock} Stocks Available</p>
             <div className="actions-order">
-              <button onClick={btnOrder}><span><BsCart3 /> Select Product</span></button>
+              <button onClick={()=> btnOrder(product)}><span><BsCart3 /> Select Product</span></button>
             </div>
 
 

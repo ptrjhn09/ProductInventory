@@ -5,6 +5,8 @@ import { MdOutlineProductionQuantityLimits } from "react-icons/md";
 import { useNavigate } from 'react-router-dom';
 import { CiLogout } from "react-icons/ci";
 import { BsCart4 } from "react-icons/bs";
+import { FaBorderAll } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 
 
 import "./Sidebar.scss";
@@ -36,6 +38,16 @@ const navigate = useNavigate();
     <BsCart4 />
 
       <span>Order Booking</span>
+     </p>
+
+     <p onClick={() =>navigate("/list-order")}>
+      <FaBorderAll />
+      <span>My Order</span>
+     </p>
+
+     <p>
+      <FaLocationDot />
+      <span>Track Order</span>
      </p>
 
      <button onClick={logout}><CiLogout/><span>Log out</span></button>

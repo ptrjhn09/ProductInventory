@@ -1,0 +1,72 @@
+.listBody{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red solid;
+
+    .listImg{
+        border: solid#3b82 5px;
+        border-radius: 20px;
+        box-shadow: 2px 3px 4px black;
+
+        &:hover{
+            box-shadow: 3px 4px 5px black;
+        }
+    }
+    table{
+        width: 100%;
+        border-radius: 50px;
+        border-collapse:separate;
+        border-spacing: 0px 15px;
+
+    }
+
+    tbody{
+       border-radius: 10px;
+    }
+
+    td,th{
+        padding: 10px 60px;
+        border-bottom: 1px solid #ddd;
+        font-family: 'Inter', sans-serif;
+        
+    }
+
+    tr{
+         background-color: #f3f3f3;
+
+         &:hover{
+            background-color: #f1f1f1;
+         }
+
+         padding: 20ox;
+    }
+.actionBtn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.view-btn{
+    padding: 10px 5px;
+    border: 1px solid #3b82f6;
+    background: white;
+    color: #3b82f6;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.cancel-btn{
+    padding: 10px 5px;
+    border: 1px solid #ef4444;
+    background: white;
+    color: #ef4444;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+}
